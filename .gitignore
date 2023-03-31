@@ -1,0 +1,13 @@
+.idea
+idea
+
+db.sqlite3
+venv
+
+prod_settings.py
+
+media/*
+
+__pycache__/
+.pyc
+*.pyc

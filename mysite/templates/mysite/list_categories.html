@@ -1,0 +1,15 @@
+<div class="col-md-4">
+<ul class="list-group">
+    {% for item in categories %}
+        {% if item.title == category.title %}
+            <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action active">
+                {{ item.title }}
+            </a>
+        {% else %}
+            <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action">
+                {{ item.title }}
+            </a>
+        {% endif %}
+    {% endfor %}
+</ul>
+</div>
